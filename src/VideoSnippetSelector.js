@@ -1,37 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import Slider from '@mui/material/Slider';
 import './VideoSnippetSelector.scss';
 
 const VideoSnippetSelector = () => {
-  const [startValue, setStartValue] = useState(0);
-  const [endValue, setEndValue] = useState(100);
+  const [value, setValue] = React.useState([20, 37]);
 
-  const handleStartChange = (event) => {
-    setStartValue(parseInt(event.target.value));
-  };
-
-  const handleEndChange = (event) => {
-    setEndValue(parseInt(event.target.value));
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
   };
 
   return (
-    <div className="video-snippet-selector">
-      <input
-        type="range"
-        min="0"
-        max="100"
-        value={startValue}
-        onChange={handleStartChange}
-        className="slider"
+    <div class={`video-snippet-selector`}>
+        <Slider
+        value={value}
+        onChange={handleChange}
+        valueLabelDisplay="auto"
       />
-      <input
-        type="range"
-        min="0"
-        max="100"
-        value={endValue}
-        onChange={handleEndChange}
-        className="slider"
-      />
-      <div className="highlight" style={{ left: `${startValue}%`, width: `${endValue - startValue}%` }}></div>
     </div>
   );
 };
