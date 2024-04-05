@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import SearchBar from './SearchBar';
+import SearchBar from '../components/SearchBar';
 import './Home.scss';
 const Home = () => {
 

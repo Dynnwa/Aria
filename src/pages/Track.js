@@ -1,9 +1,9 @@
 import React from 'react';
-import VideoSnippetSelector from './VideoSnippetSelector';
-import PlayPause from './PlayPause';
-import './Results.scss';
+import VideoSnippetSelector from '../components/VideoSnippetSelector';
+import PlayPause from '../components/PlayPause';
+import './Track.scss';
 
-const Results = () => {
+const Track = () => {
   return (
     <div className="new-component-container">
       <div className="album-container">
@@ -16,4 +16,4 @@ const Results = () => {
   );
 };
 
-export default Results;
+export default Track;
