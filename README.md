@@ -17,8 +17,8 @@ Aria is a full stack application designed to provide song recommendations based 
 
 ## Architecture
 
-![Architecture Diagram](![image](https://github.com/Dynnwa/Aria/assets/79378020/13af0e96-877a-408e-9c1f-84d941c69f3e)
-)
+![image](https://github.com/Dynnwa/Aria/assets/79378020/f80a97ca-3c43-4155-a1a8-8c2686dc1cdf)
+
 
 ## Getting Started
 
